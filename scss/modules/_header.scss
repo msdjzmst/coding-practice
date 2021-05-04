@@ -10,7 +10,7 @@
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
 }
 .header-inner {
-  max-width: 1022px;
+  max-width: 74.816984vw;
   margin: auto;
   vertical-align: middle;
   padding-right:0.951684vw;
@@ -30,17 +30,19 @@
   padding-left: 16px;
   font-size: 24px;
   font-weight: bold;
-  @include setting.lineHeightCrop(1.208);
+
 }
 
 //ヘッダーナビ
 .header-nav {
-  padding-left: 9.956076vw;
+  // padding-left: 9.956076vw;
+  margin-left: -46px;
   &__list {
     display: flex;
   }
   &__item {
     font-weight: bold;
+    // padding-right: 3.367496vw;
     padding-right: 46px;
   }
   &__item:last-of-type {
@@ -48,7 +50,7 @@
   }
 }
 .header-button {
-  margin-left: 13.469985vw;
+  // margin-left: 13.469985vw;
 }
 
 @include mq(l){

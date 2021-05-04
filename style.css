@@ -493,7 +493,7 @@ template {
 }
 
 .header-inner {
-  max-width: 1022px;
+  max-width: 74.816984vw;
   margin: auto;
   vertical-align: middle;
   padding-right: 0.951684vw;
@@ -524,23 +524,9 @@ template {
   font-size: 24px;
   font-weight: bold;
 }
-.header-logo__title::before {
-  display: block;
-  width: 0;
-  height: 0;
-  margin-top: calc((1 - 1.208) * .5em);
-  content: "";
-}
-.header-logo__title::after {
-  display: block;
-  width: 0;
-  height: 0;
-  margin-bottom: calc((1 - 1.208) * .5em);
-  content: "";
-}
 
 .header-nav {
-  padding-left: 9.956076vw;
+  margin-left: -46px;
 }
 .header-nav__list {
   display: -webkit-box;
@@ -553,10 +539,6 @@ template {
 }
 .header-nav__item:last-of-type {
   padding-right: 0;
-}
-
-.header-button {
-  margin-left: 13.469985vw;
 }
 
 @media screen and (max-width: 970px) {
