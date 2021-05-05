@@ -3,22 +3,23 @@
 .header {
   line-height: 94px;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 4;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+  transition: .3s;
 }
 .header-inner {
   max-width: 74.816984vw;
-  margin: auto;
+  margin: 0 auto;
   vertical-align: middle;
-  padding-right:0.951684vw;
+  padding-right: 14px;
   padding-left: 1.976574vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  vertical-align: middle;
+
 }
 
 //ヘッダーロゴ
@@ -30,13 +31,13 @@
   padding-left: 16px;
   font-size: 24px;
   font-weight: bold;
-
+  white-space: nowrap;
 }
 
 //ヘッダーナビ
 .header-nav {
   // padding-left: 9.956076vw;
-  margin-left: -46px;
+  margin-left: 136px;
   &__list {
     display: flex;
   }
@@ -44,6 +45,7 @@
     font-weight: bold;
     // padding-right: 3.367496vw;
     padding-right: 46px;
+    white-space: nowrap;
   }
   &__item:last-of-type {
     padding-right: 0;
@@ -54,6 +56,16 @@
 }
 
 @include mq(l){
+  .header-inner {
+    max-width: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .header-nav {
     display: none;
   }

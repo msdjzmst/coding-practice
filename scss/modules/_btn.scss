@@ -4,7 +4,7 @@
   background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
 border-radius: 10px;
 box-shadow: 0px 3px 6px #00000029;
-  display: inline-block;
+  display: block;
   min-width: 155px;
   font-weight: bold;
   color: #fff;
@@ -12,7 +12,6 @@ box-shadow: 0px 3px 6px #00000029;
   text-align: center;
   font-size: 14px;
 }
-
 
 .burger-btn{ //バーガーボタンの外側
   display: none;

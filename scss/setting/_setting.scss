@@ -1,9 +1,38 @@
 @charset "utf-8";
 
-.body {
+// メディアクエリの基準幅
+$bp-sp: 768px;
+$bp-pc: 769px;
+
+// color
+$color_main: #333333;
+$color_accent: #FFFFFF;
+
+// lineHeightCrop（line-heightの不要な余白を打ち消す）のmixinのコード例。
+// f-variables.scssという共通の変数定義用のscssファイルに記述して一元管理化しています。
+@mixin lineHeightCrop($line-height) {
+  &::before {
+    content: "";
+    display: block;
+    height: 0;
+    margin-top: calc((1 - #{$line-height}) * .5em);
+    width: 0;
+  }
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    margin-bottom: calc((1 - #{$line-height}) * .5em);
+    width: 0;
+  }
+}
+
+  body {
   box-sizing: border-box;
-  font-family: "Note sans JP";
+  color: $color_main;
+  font-family: 'Noto Sans JP', sans-serif;
   padding-top: 94px;
+  
 }
 
 li {
@@ -12,29 +41,3 @@ li {
 a{
   text-decoration: none;
 }
-// メディアクエリの基準幅
-$bp-sp: 768px;
-$bp-pc: 769px;
-
-// color
-$color_main: #4892ff;
-$color_accent: #FFBA53;
-
-// lineHeightCrop（line-heightの不要な余白を打ち消す）のmixinのコード例。
-// f-variables.scssという共通の変数定義用のscssファイルに記述して一元管理化しています。
-@mixin lineHeightCrop($line-height) {
-  &::before {
-    display: block;
-    width: 0;
-    height: 0;
-    margin-top: calc((1 - #{$line-height}) * .5em);
-    content: "";
-  }
-  &::after {
-    display: block;
-    width: 0;
-    height: 0;
-    margin-bottom: calc((1 - #{$line-height}) * .5em);
-    content: "";
-  }
- }
