@@ -31,10 +31,36 @@
   &__answer {
     // display: none;
     padding-left: 34px;
-    line-height: 1.85;
+    line-height: 1.85714286;
     background-color: #F2F2F2;
     border: 1px solid #E5E5E5;
     border-bottom: none;
     padding-right: 35px;
   }
+}
+
+//question
+.second-question {
+  padding-top: 1px;
+  padding-left: 7px;
+}
+.third-question {
+  padding-right: 20px;
+}
+
+//answer
+.first-answer {
+  padding-top: 13px;
+  padding-bottom: 27px;
+  // display: block;
+}
+.second-answer {
+  padding-top: 17px;
+  padding-bottom: 22px;
+  padding-left: 34px;
+}
+.third-answer {
+  padding-top: 21px;
+  padding-bottom: 22px;
+  padding-left: 34px;
 }
